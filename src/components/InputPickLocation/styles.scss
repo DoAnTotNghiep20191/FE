@@ -1,0 +1,29 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.option-list {
+  background: $color-white-0;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 350px;
+  overflow: auto;
+  .option:not(:last-child) {
+    padding: 6px 5px;
+    border-bottom: 1px solid $color-gray-1;
+    cursor: pointer;
+    .main-text {
+      font-size: $font-size-2;
+      font-weight: $font-weight-6;
+    }
+    .secondary-text {
+      font-size: $font-size-1;
+    }
+  }
+}
+
+.bing-map-dropdown {
+  @include mobileFrac {
+    width: 272px !important;
+  }
+}

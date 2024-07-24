@@ -1,0 +1,22 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.ticket-qrCode {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $color-white-0;
+  & > div,
+  & > img {
+    margin: auto;
+    display: block;
+  }
+  & > img {
+    margin-top: 10px;
+  }
+
+  & > div {
+    &.ant-qrcode {
+      padding: 0;
+    }
+  }
+}

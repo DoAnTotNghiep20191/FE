@@ -1,0 +1,164 @@
+@import 'src/assets/scss/themes.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.footer {
+  background-color: var(--footer-bg, $color-neutral-button);
+  padding: 88px 76px $padding-xl;
+  @include mobileFrac {
+    padding: 46px 16px $padding-xxl;
+  }
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__left {
+    line-height: 26px;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        height: 45px;
+        @include mobileFrac {
+          height: 38px;
+        }
+      }
+
+      span {
+        text-transform: uppercase;
+        color: var(--primary-color, --primary-primary);
+        font-size: $font-size-7_5;
+        font-weight: $font-weight-6;
+
+        @include mobileFrac {
+          font-size: $font-size-7;
+        }
+      }
+    }
+
+    &__content {
+      max-width: 348px;
+
+      @include mobileFrac {
+        margin: 0;
+      }
+    }
+
+    &__highlight {
+      font-weight: $font-weight-7;
+      font-family: 'Hind-SemiBold';
+      letter-spacing: 0.3px;
+      margin: 40px 0 $margin-md;
+
+      @include mobileFrac {
+        margin-top: 30px;
+      }
+    }
+
+    &__text {
+      font-family: 'Hind-Regular';
+      margin: 0;
+    }
+
+    @include mobileFrac {
+      &__text {
+        margin: auto;
+        padding-bottom: 48px;
+      }
+    }
+  }
+
+  &__right {
+    font-weight: $font-weight-7;
+    font-family: 'Hind-Bold';
+
+    &__highlight {
+      font-size: $font-size-2;
+      margin: 0;
+
+      @include mobile {
+        margin-top: $padding-xl;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: $margin-xs 0;
+      font-family: 'Hind-SemiBold';
+
+      p {
+        margin: 0;
+      }
+    }
+
+    h1 {
+      font-size: $font-size-8;
+      margin: 0 0 22px;
+
+      @include mobileFrac {
+        margin: 0 0 $padding-md;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Hind-Light';
+
+    &__info {
+      margin: 0;
+      font-family: 'Hind-Medium';
+      color: $color-neutral-neutral-3;
+      font-size: $font-size-2;
+
+      @include mobile {
+        margin: 0 0 $margin-xs;
+      }
+    }
+
+    &__term {
+      margin: 0;
+
+      @include mobile {
+        margin: 0 0 $margin-xs;
+      }
+    }
+
+    &__divider {
+      margin: 54px 0 $margin-xxl;
+
+      @include mobileFrac {
+        margin: 28px 0 $margin-xxl;
+      }
+    }
+
+    &__item {
+      margin-right: 0;
+      font-weight: $font-weight-6;
+      font-family: 'Hind-SemiBold';
+
+      &:first-child {
+        margin-right: 40px;
+
+        @include mobileFrac {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+
+  a {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

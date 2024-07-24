@@ -1,0 +1,26 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.create-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include mobileFrac {
+    justify-content: flex-start;
+  }
+
+  &-icon {
+    margin: 50px 0 70px 0;
+    color: $color-green-2;
+  }
+  &-btn {
+    width: 375px;
+
+    @include mobileFrac {
+      width: 272px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.organizer-container {
+  .divider {
+    background: $color-gray-1;
+    min-width: unset;
+    margin-top: 40px;
+  }
+
+  .update-container {
+
+    .input-container,
+    .input-box {
+      max-width: 275px;
+      width: 100%;
+    }
+  }
+
+  .form-input {
+    width: 275px;
+  }
+
+  .description-input {
+    #update-infor_message_help {
+      .ant-form-item-explain-error {
+        max-width: calc(100% - 70px);
+      }
+    }
+  }
+}

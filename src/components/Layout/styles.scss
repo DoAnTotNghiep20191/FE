@@ -1,0 +1,19 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+#layout .container-main {
+  min-height: 100vh;
+  height: fit-content;
+}
+
+#layout .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.site-layout-background {
+  background-color: var(--body-background, $color-neutral-white);
+}

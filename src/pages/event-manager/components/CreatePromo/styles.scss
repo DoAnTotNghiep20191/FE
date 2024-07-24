@@ -1,0 +1,35 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.tooltip-customize {
+  .ant-tooltip-inner {
+    background-color: #008ad8;
+  }
+}
+
+.ticket-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &-title {
+    font-weight: $font-weight-9;
+    color: var(--modal-title);
+  }
+  &-des {
+    font-size: $font-size-3;
+    color: var(--modal-title);
+  }
+  &-divider {
+    width: 275px;
+    min-width: 275px;
+    background: $color-gray-1;
+    margin: 20px 0;
+  }
+  .suffix-icon {
+    color: $color-white-0;
+    font-size: $font-size-2;
+    font-weight: $font-weight-5;
+  }
+}

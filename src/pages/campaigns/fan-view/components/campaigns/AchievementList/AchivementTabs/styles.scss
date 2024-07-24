@@ -1,0 +1,56 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.achievement-tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__inner {
+    width: 100%;
+
+    .ant-tabs-nav-list {
+      width: 100%;
+      background-color: black;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .ant-tabs-tab {
+      background-color: transparent !important;
+      width: calc(20% - 2px) !important;
+      display: flex;
+      justify-content: center;
+      color: white;
+      margin: 0 !important;
+      border: none !important;
+      padding: 0;
+
+      .ant-tabs-tab-btn {
+        width: 100%;
+
+        .tab-label {
+          border-radius: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 25px;
+        }
+      }
+    }
+
+    .ant-tabs-tab-active {
+      .ant-tabs-tab-btn {
+        .tab-label {
+          border: 1px solid #BCE7FF;
+        }
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+  }
+}

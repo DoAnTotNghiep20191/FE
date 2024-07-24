@@ -1,0 +1,13 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.switch-team-btn {
+  position: absolute;
+  bottom: 25px;
+
+  @include mobileFrac {
+    position: fixed;
+    bottom: 45px;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../assets/scss/responsive.scss";
+
+.coming-soon {
+    >p:first-child {
+        font-family: 'Goozette', sans-serif;
+        font-weight: 400;
+    }
+}
+
+@include mobile {
+    .coming-soon {
+        >p:first-child {
+            font-size: 40px;
+            line-height: 51.12px;
+            font-weight: 400;
+            color: #121313;
+            font-family: 'Goozette', sans-serif;
+        }
+
+        >p:not(:first-child) {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #121313;
+            font-family: 'Elza', sans-serif;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.verify-email-popup {
+  .verification-form-label {
+    padding-top: 0;
+  }
+  .verification-container {
+    width: 100%;
+    .verification-form {
+      width: 100%;
+    }
+
+    .ant-btn {
+      width: 212px !important;
+
+      @include mobileFrac {
+        width: 272px !important;
+      }
+    }
+  }
+}

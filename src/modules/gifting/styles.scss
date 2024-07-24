@@ -1,0 +1,31 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.gifting-ticket {
+  .contained-default--type1 {
+    >span {
+      font-size: 16px !important;
+    }
+  }
+}
+
+.scroll-customize {
+  &::-webkit-scrollbar {
+    margin-left: 20px;
+  }
+
+  @include mobileFrac {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.gift-modal {
+  @include mobileFrac {
+    .ant-modal-body {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.create-team-title {
+  font-size: $font-size-7;
+  text-align: center;
+  color: var(--modal-title);
+  font-weight: $font-weight-8;
+}
+
+.create-team-des {
+  font-size: $font-size-3;
+  text-align: center;
+  color: var(--modal-title);
+}

@@ -1,0 +1,24 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.notification.event-modal {
+  padding: 0 40px;
+  .icon-verification {
+    display: block;
+    color: $color-green-0;
+    margin: auto;
+  }
+
+  .modal-content {
+    margin-bottom: 60px;
+    .ant-modal-body{
+      height: 100%;
+    }
+  }
+}
+
+.notification-modal .ant-modal-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

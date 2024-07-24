@@ -1,0 +1,33 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.input-text-area-box {
+  .input-label {
+    font-size: $font-size-1;
+    font-weight: $font-weight-5;
+    color: #121313;
+  }
+  .ant-input-outlined {
+    background: var(--input-bg-color);
+    color: #121313;
+    font-size: $font-size-3;
+    border-color: var(--input-border-color);
+    textarea {
+      color: #121313;
+      &::placeholder {
+        font-size: $font-size-3;
+        color: #8F90A6;
+        // font-style: italic;
+        font-weight: $font-weight-2;
+      }
+    }
+  }
+  .ant-input-data-count {
+    font-size: $font-size-1;
+    color: #121313;
+  }
+  .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled) {
+    background: var(--input-bg-color);
+  }
+}

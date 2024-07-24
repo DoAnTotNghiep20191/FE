@@ -1,0 +1,17 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.refund-modal .refund-button__modified {
+  > span {
+    font-size: 16px !important;
+  }
+}
+
+.refund-modal {
+  @include mobileFrac {
+    .ant-modal-body {
+      width: 100%;
+    }
+  }
+}

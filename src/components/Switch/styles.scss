@@ -1,0 +1,67 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .switch-customs {
+    height: 22px;
+    min-width: 38px;
+    width: 38px;
+    border-radius: 5px;
+    border: 1px solid #3f475b;
+    background: #E4E4EB;
+    &:hover {
+      background: #E4E4EB;
+    }
+    &::after {
+      content: url('../../assets/icons/common/switchUnCheck.svg');
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 0;
+      right: 2px;
+      margin: 0 auto;
+      text-align: center;
+      color: var(--text-link);
+    }
+    .ant-switch-handle {
+      width: 16px;
+      height: 20px;
+      top: 0;
+      inset-inline-start: 0px;
+      &::before {
+        border-radius: 5px;
+      }
+    }
+    .ant-switch-inner {
+      padding-inline-start: 16px;
+    }
+  }
+  .ant-switch-checked {
+    position: relative;
+    background: var(--btn-contained-bg);
+    &:hover {
+      background: var(--btn-contained-bg) !important;
+    }
+    &::after {
+      content: url('../../assets/icons/common/switchCheck.svg');
+      position: absolute;
+      top: 0;
+      left: -14px;
+      text-align: center;
+      margin: 0 auto;
+      width: 14px;
+      height: 14px;
+      color: var(--input-text-color);
+    }
+
+    .ant-switch-handle {
+      inset-inline-start: calc(100% - 16px);
+    }
+    .ant-switch-inner {
+      padding-inline-start: 0px;
+    }
+  }
+}

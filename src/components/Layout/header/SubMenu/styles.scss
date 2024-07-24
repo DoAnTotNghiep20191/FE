@@ -1,0 +1,28 @@
+@import 'src/assets/scss/responsive.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/colors.scss';
+@import 'src/assets/scss/_themes.scss';
+
+.menu-nft {
+  height: 100%;
+
+  &-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    // li {
+    //   a {
+    //     padding: 6px;
+    //     color: $color-gray-0;
+    //     font-weight: $font-weight-7;
+    //     font-size: $font-size-3;
+    //   }
+    // }
+    // li.active {
+    //   a {
+    //     color: $color-white-0;
+    //     font-weight: $font-weight-7;
+    //   }
+    // }
+  }
+}

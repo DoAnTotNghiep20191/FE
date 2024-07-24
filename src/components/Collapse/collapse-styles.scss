@@ -1,0 +1,59 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.custom-collapse {
+  border-radius: 16px;
+  border: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  .ant-collapse-item {
+    border-radius: 16px !important;
+    border: none;
+    color: var(--collapse-color);
+
+    .ant-collapse-header {
+      font-size: 16px;
+    }
+  }
+
+  .ant-collapse-item {
+    .ant-collapse-header {
+      padding: 10px 24px 10px;
+      border: none;
+      border-radius: 0 !important;
+      &-text {
+        color: var(--collapse-color);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .ant-collapse-content {
+    border: none;
+    background-color: unset;
+    color: var(--collapse-color);
+    font-weight: 200;
+    font-style: italic;
+    font-size: 16px;
+    .ant-collapse-content-box {
+      padding: 10px 24px;
+      padding-left: 50px;
+    }
+  }
+
+  svg {
+    transition: all 0.3s;
+  }
+
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-collapse-arrow {
+    color: #2859c5 !important;
+  }
+}

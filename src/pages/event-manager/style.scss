@@ -1,0 +1,146 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.button-override.contained-default--type2 span {
+  font-size: 14px !important;
+}
+
+.event-manager-dropdown-mobile {
+  z-index: 1000;
+}
+.customize-tab {
+  .ant-tabs-nav {
+    margin-top: 24px;
+    margin-bottom: unset;
+    margin-bottom: 8px;
+    height: 40px;
+  }
+  .ant-tabs-nav-list {
+    margin-right: auto;
+    margin-left: 24px;
+  }
+  .ant-tabs-tab {
+    width: 94px;
+    justify-content: center;
+    padding: 0 0 3px 0;
+  }
+  @include mobileFrac {
+    .ant-tabs-nav-list {
+      margin-left: unset;
+      margin-left: 4px;
+      width: 341px;
+    }
+    .ant-tabs-tab {
+      width: 65px;
+      margin-left: unset;
+      margin-left: 24px !important;
+    }
+  }
+}
+
+.ant-table-cell {
+  @include mobileFrac {
+    padding: 0 6px !important;
+  }
+}
+
+.ticket-item {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@include mobile {
+  .ticket-item {
+    max-height: 76px;
+  }
+  .insights-cpn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    > div:first-child {
+      width: 100%;
+      grid-column: span 2;
+    }
+  }
+}
+
+.checkbox-customize {
+  .ant-checkbox-wrapper:hover {
+    background-color: unset !important;
+  }
+  .ant-checkbox .ant-checkbox-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-color: #000;
+  }
+  .ant-checkbox-input {
+    &:hover {
+      background-color: unset !important;
+      & + span {
+        background-color: transparent !important;
+        border-color: #000 !important;
+      }
+    }
+    width: 24px;
+    height: 24px;
+  }
+  .ant-checkbox-disabled .ant-checkbox-inner {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-color: #000;
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    &:hover {
+      background-color: unset !important;
+      border-color: #000 !important;
+    }
+    &:after {
+      content: '';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      background-image: url('data:image/svg+xml;utf8,<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="%238FBFFA"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.637 1.19841C14.0627 1.55023 14.1227 2.18055 13.7709 2.60628L5.73083 12.3355L5.72841 12.3384C5.54553 12.558 5.31601 12.7341 5.05654 12.8539C4.79707 12.9736 4.51417 13.034 4.22841 13.0307C3.93798 13.0271 3.65125 12.9577 3.39146 12.8279C3.13254 12.6984 2.9062 12.5122 2.7293 12.283C2.72871 12.2823 2.72811 12.2815 2.72752 12.2807L0.210633 9.04474C-0.128437 8.6088 -0.0499029 7.98052 0.386045 7.64145C0.821992 7.30238 1.45026 7.38092 1.78933 7.81686L4.2529 10.9843L12.2291 1.33225C12.581 0.906523 13.2113 0.846601 13.637 1.19841Z" fill="%238FBFFA"/></svg>');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      transform: rotate(0deg);
+      top: 5px;
+    }
+  }
+}
+
+.contained-default--type2 span {
+  font-size: 12px !important;
+}
+
+.ant-table-column-sorters {
+  .ant-table-column-title {
+    flex: unset;
+  }
+  > svg {
+    margin-right: auto;
+    margin-left: 4px;
+  }
+}
+
+.ant-badge .ant-badge-count {
+  border-radius: 100%;
+  padding: 0 4px 0 4px;
+  width: 16px;
+  height: 16px;
+  min-width: unset;
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 11px;
+  text-align: center;
+}

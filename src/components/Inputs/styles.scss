@@ -1,0 +1,162 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.input-box {
+  margin-bottom: 0;
+
+  .input-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .optional {
+      font-size: $font-size-1;
+    }
+  }
+
+  .ant-input {
+    ::-webkit-input-placeholder {
+      font-style: unset;
+    }
+
+    :-moz-placeholder {
+      font-style: unset;
+    }
+
+    ::-moz-placeholder {
+      font-style: unset;
+    }
+
+    :-ms-input-placeholder {
+      font-style: unset;
+    }
+
+    &::placeholder {
+      color: #8F90A6 !important;
+    }
+  }
+
+  .ant-typograp hy {
+    margin-bottom: 4px;
+  }
+
+  .input-default {
+    height: 48px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 10px;
+    background: var(--input-bg-color);
+    color: #121313;
+    font-size: $font-size-3;
+    align-items: center;
+    &::placeholder {
+      font-size: $font-size-3;
+      color: #8F90A6;
+      // font-style: italic;
+      // font-weight: $font-weight-2;
+    }
+
+    input {
+      background: transparent;
+      font-size: $font-size-3;
+      color: var(--input-text-color);
+
+      &::placeholder {
+        font-size: $font-size-3;
+        color: #8F90A6;
+      }
+    }
+
+    &:focus-within {
+      border: 1px solid var(--input-border-color) !important;
+      box-shadow: none;
+    }
+
+    &:hover {
+      background: var(--input-bg-color);
+      border: 1px solid var(--input-border-color);
+    }
+
+    .ant-input-prefix {
+      margin-inline-end: 8px;
+    }
+
+    .ant-input-number-handler-wrap {
+      display: none;
+    }
+
+    .ant-input-number-input-wrap {
+      height: 100%;
+
+      input {
+        height: 100%;
+
+        &::placeholder {
+          font-size: $font-size-3;
+          color: #8F90A6;
+          // font-style: italic;
+          font-weight: $font-weight-2;
+        }
+      }
+    }
+  }
+
+  .input-default-type2 {
+    &::placeholder {
+      font-weight: $font-weight-2;
+    }
+  }
+
+  .input-default-type2.ant-input-password {
+    input {
+      &::placeholder {
+        font-size: $font-size-3;
+        color: #8F90A6;
+        // font-style: italic;
+        font-weight: $font-weight-2;
+      }
+    }
+  }
+
+  .ant-input-status-error:not(.ant-input-disabled) {
+    background: var(--input-bg-color);
+
+    &:focus-within {
+      background: var(--input-bg-color);
+      box-shadow: none;
+    }
+
+    &:hover {
+      background: var(--input-bg-color);
+      border: 1px solid $color-error !important;
+    }
+  }
+
+  .ant-input-number-outlined.ant-input-number-status-error:not(.ant-input-number-disabled) {
+    background: var(--input-bg-color);
+  }
+
+  .ant-form-item-required {
+    &::before {
+      display: none !important;
+    }
+  }
+
+  .input-label {
+    font-size: $font-size-1;
+    font-weight: $font-weight-5;
+    color: #121313;
+  }
+
+  .ant-tooltip-content {
+    .ant-tooltip-inner {
+      background-color: $color-blue-5;
+    }
+  }
+
+  .ant-tooltip-arrow {
+    &::before {
+      background: $color-blue-5;
+    }
+  }
+}

@@ -1,0 +1,223 @@
+@import './colors';
+@import './variable.scss';
+
+body[data-theme='Light'] {
+  --primary-color: #{$color-white-0};
+  --nft-card-color: #{$color-white-0};
+  --error-color: #{$color-error};
+  // switch
+  --switch-button-background: #{$color-neutral-neutral-6};
+  --switch-button-toggle-box: #{$color-neutral-white};
+  // collection filters
+  --collection-filter-background: #{$color-neutral-white};
+  --collection-filter-border: #{$color-neutral-neutral-5};
+  --collection-filter-title-text: #{$color-neutral-neutral-1};
+  --collection-filter-select-background: #{$color-neutral-neutral-5};
+  --collection-filter-text: #{$color-neutral-neutral-3};
+  --collection-filter-avatar-bg: #{$color-state-success};
+  --collection-filter-avatar-text: #{$color-neutral-white};
+  //inputs
+  --input-border-color: #{$color-neutral-neutral-5};
+  --input-border-focus-color: #{$color-state-info};
+  --input-border-hover: #{$color-neutral-neutral-5};
+  --input-border-background-hover: #{$color-neutral-neutral-6};
+  --input-success: #{$color-state-success};
+  --input-warning: #{$color-state-warning};
+  --input-error: #{$color-error};
+  // -------- Colors -----------
+  --primary-color: #{$color-primary-primary};
+
+  // >>> Info
+  --info-color: #{$color-primary-primary};
+
+  // >>> Success
+  --success-color: #{$color-state-success};
+
+  // >>> Warning
+  --warning-color: #{$color-state-warning};
+
+  // >>> Error
+  --error-color: #{$color-error};
+
+  // Background color for `<body>`
+  --body-background: #{$color-black-1};
+
+  //nft card
+  --nft-card-color: #{$color-neutral-white};
+  --nft-result-title-color: #{$color-neutral-neutral-1};
+
+  //Modal
+  --modal-bg: #{$color-white-5};
+  --modal-border-color: #{$color-neutral-neutral-4};
+  --modal-text-color: #{$color-neutral-neutral-3};
+  --modal-close-hover: #{$color-neutral-neutral-5};
+  --modal-guide-bg: #{$color-neutral-neutral-6};
+  --modal-text-neutral-2-color: #{$color-neutral-neutral-2};
+  --modal-title: #{$color-neutral-neutral-1};
+
+  //Image
+  --image-preview-bg: #{$color-neutral-white};
+
+  // >>> Menu
+  --menu-text-color: #{$color-neutral-neutral-4};
+  --menu-text-color-active: #{$color-primary-primary};
+  --menu-border-color: #{$color-primary-primary};
+  --menu-wallet-info-text: #{$color-neutral-neutral-1};
+
+  // >>> BTN
+  --btn-contained-bg: #{$color-primary-primary};
+  --btn-contained-bg-rgb: #{$color-primary-rgb};
+  --btn-contained-bg-hover: #{$color-neutral-blue};
+  --btn-contained-bg-disable: #{$color-neutral-neutral-5};
+  --btn-contained-text-color: #{$color-white-0};
+  --btn-contained-text-color-hover: #{$color-neutral-white};
+  --btn-contained-text-color-disable: #{$color-neutral-neutral-4};
+
+  --btn-outline-bg: #{$color-neutral-white};
+  --btn-outline-bg-hover: #{$color-neutral-button};
+  --btn-outline-bg-disable: #{$color-neutral-white};
+  --btn-outline-border-color: #{$color-primary-primary};
+  --btn-outline-border-color-hover: #{$color-neutral-blue};
+  --btn-outline-border-color-disable: #{$color-neutral-neutral-4};
+  --btn-outline-text-color: #{$color-primary-primary};
+  --btn-outline-text-color-hover: #{$color-neutral-blue};
+  --btn-outline-text-color-disable: #{$color-neutral-neutral-4};
+  --btn-status-color: #{$color-neutral-white};
+
+  // tabs
+  --tab-button-text-color: #{$color-neutral-neutral-4};
+  --tab-button-text-active-color: #{$color-neutral-neutral-1};
+  --tab-border-bottom-color: #{$color-neutral-neutral-5};
+
+  // header
+  --header-background: #{$color-black-0};
+
+  // borrow
+  --borrow-outstanding-bg: #{$color-pink-0};
+  --borrow-box-title-color: #{$color-neutral-neutral-3};
+  --borrow-default-status-color: #{$color-neutral-neutral-1};
+  --borrow-info-status-color: #{$color-state-info};
+  --borrow-border-color: #{$color-neutral-neutral-5};
+  --borrow-step-text-color: #{$color-white-0};
+  --borrow-sub-title-color: #{$color-neutral-neutral-4};
+
+  //landing
+  --landing-banner-text: #{$color-white-0};
+  --landing-reserves-bg: #{$color-neutral-neutral-6};
+  --landing-content-color: #{$color-white-0};
+  --landing-footer-bg: #{$color-neutral-neutral-6};
+  --landing-primary-text-color: #{$color-neutral-neutral-1};
+  --landing-second-text-color: #{$color-neutral-neutral-2};
+  --landing-third-text-color: #{$color-neutral-neutral-3};
+  --landing-four-text-color: #{$color-neutral-neutral-4};
+  --landing-fifth-text-color: #{$color-neutral-neutral-5};
+  --landing-blue-primary-color: #{$color-primary-primary};
+  --landing-bg: #{$color-white-0};
+
+  --landing-blue-100-bg: #{$color-neutral-button};
+  // --landing-banner-img-bg: url('../images/landing-page-1/bg-banner.png');
+  // --landing-signup-img-bg: url('../images/landing-page-2/signupBg.png');
+  --landing-infor-img-bg: linear-gradient(
+    rgba(233, 241, 252, 0),
+    rgba(233, 241, 252, 0.45),
+    rgba(233, 241, 252, 0.9)
+  );
+
+  //footer
+  --footer-bg: #{$color-neutral-button};
+  // Box
+  --box-background: #{$color-neutral-neutral-6};
+
+  // Borrow
+  --color-table-export-bg: #{$color-neutral-blue-1};
+  --color-table-trash-bg: #{$color-neutral-red};
+  --color-table-trash-disabled-bg: #{$color-neutral-neutral-5};
+
+  --color-title: #{$color-neutral-neutral-1};
+  --color-subtitle: #{$color-neutral-neutral-3};
+
+  --text-text-1: #{$text-text-1};
+  --text-color-white-0: #{$color-neutral-white};
+  --text-neutral-2: #{$color-neutral-neutral-2};
+
+  //color icon
+  --bg-icon-close: #{$color-white-5};
+  --color-icon-close: #{$color-blue-3};
+
+  //text-link
+  --text-link: #{$color-state-info};
+  --text-link-1: #{$color-state-info};
+
+  //input
+  --input-border-color: #{$color-dark-4};
+  --input-bg-color: #{$color-white-1};
+  --input-text-color: #{$color-dark-5};
+  --input-prefix-fill: #{$color-blue-4};
+
+  //collapse
+  --collapse-color: #{$color-neutral-neutral-1};
+
+  //switcher
+  --switcher-bg-selected: #{$color-blue-5};
+  --switcher-text-selected: #{$color-white-0};
+  --switcher-text-color: #{$color-blue-5};
+  --switcher-bg-color: #{$color-white-0};
+  --switcher-border-selected: #{$color-blue-5};
+
+  //step
+  --step-bg-color-active: #{$color-pink-1};
+  --step-border-color: #{$color-pink-1};
+
+  --step-bg-color-inactive: #{$color-white-0};
+  --step-text-color: #{$color-pink-1};
+  --step-text-color-active: #{$color-white-0};
+  --step-line-color: #{$color-light-0};
+  --step-line-color-active: #{$color-pink-1};
+}
+
+body[data-theme='Dark'] {
+  --primary-color: #{$color-state-info};
+  --nft-card-color: #{$color-state-warning};
+  --error-color: #{$color-error};
+
+  //text link
+  --text-link: #{$color-green-2};
+  --text-link-1: #{$color-white-0};
+
+  //color icon
+  --bg-icon-close: #{$color-black-2};
+  --color-icon-close: #{$color-white-0};
+
+  //modal
+  --modal-bg: #{$color-black-2};
+  --modal-title: #{$color-white-0};
+
+  //input
+  --input-border-color: #{$color-white-2};
+  --input-bg-color: #{$color-white-1};
+  --input-text-color: #{$color-white-0};
+  --input-prefix-fill: #{$color-white-0};
+
+  //button
+  --btn-contained-bg: #{$color-green-2};
+
+  //collapse
+  --collapse-color: #fff;
+
+  //switcher
+  --switcher-bg-selected: #{$color-green-1};
+  --switcher-text-selected: #{$color-green-0};
+  --switcher-border-selected: #{#1dd836};
+  --switcher-bg-color: #{$color-green-1};
+  --switcher-text-color: #{$color-white-0};
+
+  //step
+  --step-bg-color-active: #{$color-green-2};
+  --step-border-color: #{$color-pink-1};
+
+  --step-bg-color-inactive: #{$color-white-0};
+  --step-text-color: #{$color-white-0};
+  --step-line-color: #{$color-light-0};
+  --step-text-color-active: #{$color-green-1};
+  --step-line-color-active: #{$color-green-2};
+}

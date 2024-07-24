@@ -1,0 +1,96 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.card-event {
+  padding: 10px;
+
+  &-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #121313cc;
+
+    .info-time {
+      width: 49px;
+      height: 49px;
+      border-radius: 100px;
+      background: #3f475bcc;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+
+      &-month {
+        color: $color-white-0;
+        font-size: $font-size-2;
+        text-transform: uppercase;
+      }
+
+      &-date {
+        color: $color-white-0;
+        font-size: $font-size-3;
+        font-weight: $font-weight-5;
+      }
+    }
+
+    .info-name {
+      flex: 1;
+      justify-content: space-between;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+
+      &-title {
+        color: $color-white-0;
+        font-size: $font-size-5;
+        font-weight: $font-weight-7;
+      }
+
+      &-create {
+        color: $color-white-0;
+      }
+    }
+  }
+
+  &-dec {
+    padding: 16px 8px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    background-color: $color-white-0;
+    border-radius: 0 0 3px 3px;
+
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+
+    .dec-item {
+      width: 48%;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      &>svg {
+        min-width: 15%;
+      }
+
+      p {
+        color: #121313;
+        font-size: $font-size-2;
+        font-weight: $font-weight-4;
+      }
+    }
+  }
+
+  .sold-out-bar {
+    height: 47px;
+    width: 100%;
+    background: $color-pink-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+}

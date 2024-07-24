@@ -1,0 +1,42 @@
+.reward-bg {
+  background-image: url('/images/background2.png');
+}
+
+.item-bg {
+  background-image: url('/images/background3.png');
+}
+
+.campaign-card-item {
+  .ant-collapse-content-box {
+    padding: 0 !important;
+    padding-left: 10px !important;
+  }
+
+  .ant-collapse-content {
+    padding-bottom: 16px;
+  }
+}
+
+.campaign-insight {
+  border: unset;
+
+  .ant-collapse-header {
+    background: url('/images/background.png');
+    padding: 0;
+    height: 64px;
+
+    .ant-collapse-header-text {
+      max-width: 100%;
+    }
+  }
+
+  .ant-collapse-content>.ant-collapse-content-box {
+    padding: 16px 0;
+  }
+
+  &>.ant-collapse-item:last-child {
+    .ant-collapse-header {
+      border-radius: unset;
+    }
+  }
+}

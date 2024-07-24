@@ -1,0 +1,34 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.verification {
+  max-width: 375px;
+  .container-main {
+    width: 100%;
+    gap: 20px;
+  }
+  .character {
+    width: 40px;
+    max-width: 40px;
+    height: 50px;
+    background: var(--input-bg-color);
+    border-radius: 10px;
+    border: 1.5px solid var(--input-border-color);
+    color: #000000;
+    font-size: $font-size-3;
+  }
+  .character--selected {
+    border: 1.5px solid #008AD8;
+    outline: none !important;
+  }
+  .character-error {
+    border: 1.5px solid $color-error;
+  }
+  .error {
+    font-size: $font-size-3;
+    color: $color-error;
+    margin-top: 5px;
+    text-align: center;
+  }
+}

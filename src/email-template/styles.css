@@ -1,0 +1,147 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.template-wrap {
+  width: 600px;
+  min-height: 800px;
+  background-color: #191b1f;
+  color: #fff;
+  padding: 50px 70px 40px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.template-wrap .logo {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.template-wrap .title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.template-wrap .content {
+  background-color: #3f475b;
+  border-radius: 10px;
+  padding: 40px 55px;
+  width: 460px;
+  font-size: 16px;
+}
+
+.template-wrap .content > p {
+  margin-bottom: 20px;
+  width: 346px;
+}
+
+.template-wrap .content > p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.template-wrap .content .note {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+
+.template-wrap .content .verify-code {
+  letter-spacing: 5px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.template-wrap .footer {
+  text-align: center;
+  font-size: 16px;
+}
+
+.template-wrap .footer > img {
+  margin-right: 15px;
+}
+
+.template-wrap.password-updated .content {
+  text-align: center;
+}
+
+.template-wrap.password-updated .content > p {
+  max-width: unset;
+}
+
+.template-wrap .primary-btn {
+  border-radius: 29px;
+  background: #87e97c;
+  width: 272px;
+  height: 59px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin: auto;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-top: 40px;
+}
+
+.organiser-welcome .content {
+  text-align: center;
+}
+
+.event-live .content .website {
+  font-weight: 500;
+  margin: 40px 0;
+}
+
+.organiser,
+.fan .content > p:nth-child(3) {
+  margin-top: 20px;
+}
+
+.fan .content .sub-title {
+  font-weight: 500;
+}
+
+.fan .content .list-ticket > span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.fan .content .payment-summary {
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+  width: 379px;
+  color: #000;
+  margin: 20px 0;
+}
+
+.fan .content .payment-summary .title {
+  font-weight: 500;
+  text-align: left;
+  font-size: 16px;
+}
+
+.fan .content .payment-summary .note {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.divider {
+  background: rgba(123, 123, 123, 0.5);
+  height: 1px;
+  width: 339px;
+  margin: 15px auto;
+}
+
+.fan .content .payment-summary .total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}

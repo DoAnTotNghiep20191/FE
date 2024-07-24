@@ -1,0 +1,32 @@
+.candle-loading {
+  .candle1 {
+    height: 10px;
+    width: 2px;
+    background: #FF005A;
+    animation-delay: 0s;
+  }
+
+  .candle2 {
+    height: 10px;
+    width: 2px;
+    background: #008AD8;
+    animation-delay: 0.5s;
+  }
+
+  .candle3 {
+    height: 10px;
+    width: 2px;
+    background: #FFDB00;
+  }
+
+  .scale {
+    animation: scale 0.5s alternate infinite ease-in;
+  }
+}
+
+@keyframes scale {
+
+  100% {
+    transform: scaleY(1.5);
+  }
+}

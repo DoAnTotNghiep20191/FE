@@ -1,0 +1,203 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.my-events {
+  // padding: 40px 30vw;
+  padding: 40px 0;
+  max-width: 664px;
+  margin: auto;
+
+  @include mobileFrac {
+    padding: 20px;
+  }
+
+  .search-btn-wrapper {
+    display: flex;
+    align-items: start;
+  }
+
+  .events {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    &-search {
+      margin-top: 50px;
+      width: 675px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $color-white-2;
+      height: 59px;
+      padding: 0 20px;
+      border-radius: 29px;
+      margin: auto;
+
+      .input-globe {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: $color-white-0;
+
+        &::placeholder {
+          font-size: $font-size-3;
+          color: $color-white-0;
+          font-weight: $font-weight-3;
+          // font-style: italic;
+        }
+
+        &:focus-within {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .purchase-history-btn {
+    color: $color-pink-1;
+    cursor: pointer;
+  }
+
+  .view-ticket-btn {
+    width: 176px;
+    // height: 39px;
+    display: block;
+    margin: 10px 0 50px;
+    margin-left: auto;
+  }
+
+  .segmented {
+    // width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: $color-white-2;
+    margin: 50px 0 30px;
+    width: 200px;
+
+    .ant-segmented-item {
+      width: 50%;
+      border-radius: 10px;
+      height: 36px;
+
+      &-label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: $font-weight-5;
+        font-size: $font-size-1;
+      }
+    }
+  }
+
+  .list-action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+
+    .view-ticket-btn {
+      margin-left: unset;
+    }
+  }
+}
+
+.divider {
+  background: $color-gray-1;
+}
+
+.purchase-history {
+  margin: 44px auto;
+  max-width: 480px;
+
+  // color: $color-white-0;
+
+  @include mobileFrac {
+    margin: 20px;
+  }
+
+  &>p {
+    font-size: $font-size-8;
+    cursor: pointer;
+    width: fit-content;
+    margin-bottom: 40px;
+
+    // font-weight: $font-weight-9;
+    .arrow-left {
+      margin-right: 15px;
+    }
+  }
+}
+
+.review-notification {
+  .ant-modal-content {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.modal-content-wrap {
+  display: flex;
+  color: $color-white-0;
+  align-items: flex-start;
+
+  &>span:first-child {
+    padding-top: 30px;
+  }
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  .title {
+    font-size: $font-size-7;
+  }
+
+  .message {
+    font-size: $font-size-2;
+  }
+}
+
+.modal-content {
+  padding: 10px 50px;
+
+  @include mobileFrac {
+    max-height: none;
+    padding: 10px 0;
+  }
+}
+
+.event-modal {
+  padding: 20px 80px;
+  // color: $color-white-0;
+
+  @include mobileFrac {
+    padding: 0;
+  }
+}
+
+.custom-card.card-event {
+  display: flex;
+  gap: 24px;
+  background: $color-gray-3;
+
+  .card-event-banner {
+    width: 342px;
+    height: 168px;
+
+    &>img {
+      height: 100%;
+    }
+  }
+}
+
+.ant-empty .ant-empty-description {
+  color: $color-white-0;
+}
+
+.my-event-list {
+  overflow-x: hidden !important;
+}

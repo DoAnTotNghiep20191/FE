@@ -1,0 +1,96 @@
+@import 'src/assets/scss/responsive.scss';
+
+$fail-text-color: #d42f2f;
+$success-text-color: #245f18;
+
+$background-info-color: #eef4ff;
+$background-success-color: #eefaf2;
+$background-warning-color: #fffaeb;
+$background-error-color: #feefeb;
+
+$info-color: #4d8aff;
+$filter-info-color: invert(44%) sepia(64%) saturate(1244%) hue-rotate(200deg) brightness(101%)
+  contrast(104%);
+
+$error-color: #f35b37;
+$filter-error-color: invert(45%) sepia(34%) saturate(1795%) hue-rotate(333deg) brightness(96%)
+  contrast(98%);
+
+$warning-color: #fdc932;
+$filter-warning-color: invert(83%) sepia(53%) saturate(891%) hue-rotate(331deg) brightness(106%)
+  contrast(98%);
+
+$success-color: #4ecc79;
+$filter-success-color: invert(68%) sepia(50%) saturate(461%) hue-rotate(88deg) brightness(91%)
+  contrast(95%);
+
+.Toastify__toast-container {
+  width: auto;
+
+  &--bottom-right {
+  }
+}
+
+.wrapper-toast {
+  min-width: 420px;
+  background: $background-info-color;
+  box-sizing: border-box;
+  align-items: center;
+  overflow: hidden;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border-left: 8px solid $info-color;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+  @include mobileFrac {
+    min-width: 375px;
+  }
+
+  .body-toast {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    gap: 16px;
+  }
+
+  .toast-icon {
+    width: 30px;
+    height: 30px;
+    filter: $filter-info-color;
+  }
+
+  .toast-error-icon {
+    filter: $filter-error-color;
+  }
+
+  .toast-success-icon {
+    filter: $filter-success-color;
+  }
+
+  .toast-warning-icon {
+    filter: $filter-warning-color;
+  }
+
+  .toast-close-icon {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.wrapper-error-toast {
+  border-left-color: $error-color;
+  background: $background-error-color;
+}
+
+.wrapper-success-toast {
+  border-left-color: $success-color;
+  background: $background-success-color;
+}
+
+.wrapper-warning-toast {
+  border-left-color: $warning-color;
+  background: $background-warning-color;
+}

@@ -1,0 +1,21 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.votee-empty-wrapper {
+  padding: 18px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    height: 128px;
+    width: auto;
+  }
+
+  &__text {
+    font-size: $font-size-3;
+    color: $color-neutral-neutral-3;
+    font-family: 'Hind-Medium';
+    margin-top: $margin-xl;
+  }
+}

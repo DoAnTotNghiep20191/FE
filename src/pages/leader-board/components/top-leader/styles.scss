@@ -1,0 +1,100 @@
+.top-leader-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    .top-leader-layout {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(38, 38, 38, 0.85) 15.4%, #000 19.9%, #000 65.4%, rgba(102, 102, 102, 0.00) 100%);
+        display: flex;
+        flex-direction: column;
+        height: 244px;
+        padding: 0 8px;
+
+        .rank-avatar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            .rank {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+                width: 24px;
+                height: 24px;
+                transform: rotate(-45deg);
+                flex-shrink: 0;
+                line-height: normal;
+
+                p {
+                    transform: rotate(45deg);
+                    width: fit-content;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+        .user-name {
+            margin-top: 16px;
+            color: white;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        .point {
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 33px;
+            border-radius: 100px;
+            border: 1px solid #FFF;
+            background: var(--Dark-Dark-0, #1C1C28);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+            color: #FFF;
+        }
+    }
+}
+
+.layout-no1 {
+    width: 100px;
+}
+
+.layout-no2 {
+    width: 82px;
+}
+
+.rank1 {
+    margin-top: 15px;
+    color: #FFF500;
+    border: 1px solid #FFF500;
+    background: var(--Primary-Black-Night, #121313);
+}
+
+.rank2 {
+    margin-top: 45px;
+    color: #CAD3E4;
+    border: 1px solid rgba(137, 148, 171, 0.10);
+    background: var(--Primary-Black-Night, #121313);
+}
+
+.rank3 {
+    margin-top: 45px;
+    color: #FFC700;
+    border: 1px solid #FFC700;
+    background: var(--Primary-Black-Night, #121313);
+}

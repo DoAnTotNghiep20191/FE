@@ -1,0 +1,43 @@
+@import './variable.scss';
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet2 {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin mobileFrac {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tabletFrac {
+  @media (max-width: #{$tablet-width-lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktopFrac {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}

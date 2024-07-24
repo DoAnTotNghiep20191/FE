@@ -1,0 +1,16 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.ant-carousel .slick-next.next-arrow {
+  right: -30px;
+  color: $color-white-0;
+  top: 150px;
+}
+
+.ant-carousel .slick-prev.prev-arrow {
+  left: -30px;
+  z-index: 9;
+  top: 150px;
+  color: $color-white-0;
+}

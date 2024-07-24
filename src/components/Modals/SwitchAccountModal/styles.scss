@@ -1,0 +1,26 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.modal-container-mobile-v2 {
+  .ant-modal-content {
+    background: var(--modal-bg);
+    min-height: 100vh;
+    border-radius: 0px;
+    min-height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobileFrac {
+      height: auto;
+      padding: 20px;
+      align-items: start;
+    }
+  }
+}
+
+.full-height {
+  height: 100vh;
+  height: calc(var(--window-height) - 40px);
+}

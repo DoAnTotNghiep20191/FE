@@ -1,0 +1,105 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.review-container {
+  width: 676px;
+  margin: auto;
+  background: $color-grey-4;
+  padding: 30px 100px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include mobileFrac {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  &-title {
+    font-size: $font-size-7;
+    font-weight: 900;
+    color: $color-white-0;
+    margin-bottom: 10px;
+  }
+  &-count {
+    font-size: $font-size-3;
+    margin-bottom: 50px;
+    color: $color-white-0;
+  }
+  .review-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &-box {
+      width: 80px;
+      height: 80px;
+      background: $color-white-0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 10px;
+      gap: 10px;
+      margin-bottom: 5px;
+      p {
+        color: $color-grey-4;
+        font-size: $font-size-3;
+        font-weight: $font-weight-5;
+      }
+    }
+    &-percent {
+      color: $color-white-0;
+      font-size: $font-size-8;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+    &-des {
+      font-size: $font-size-3;
+      color: $color-white-0;
+    }
+    &-line {
+      margin: 40px 0 30px 0;
+      width: 272px;
+      background: $color-grey-2;
+    }
+    &-write {
+      margin-bottom: 10px;
+    }
+    &-write,
+    &-display {
+      width: 176px;
+    }
+  }
+  .review-box {
+    padding: 30px 0;
+    width: 100%;
+    &-header {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    &-name {
+      font-size: $font-size-1;
+      color: $color-white-0;
+      font-weight: $font-weight-7;
+    }
+    &-icon {
+      width: 16px;
+      height: 14px;
+      color: #fff;
+    }
+    &-content {
+      font-size: $font-size-3;
+      color: $color-white-0;
+    }
+    &-line {
+      min-width: 272px;
+      width: 272px;
+      background: $color-grey-2;
+      margin: 40px auto 0 auto;
+    }
+  }
+}

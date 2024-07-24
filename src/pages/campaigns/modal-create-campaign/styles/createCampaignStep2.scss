@@ -1,0 +1,76 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.step2-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .step2-content {
+    width: 575px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include mobileFrac {
+      width: 100%;
+    }
+
+    &-divider {
+      width: 272px;
+      min-width: 272px;
+      background: $color-gray-1;
+      margin: 40px 0 30px 0;
+    }
+
+    &-btn {
+      width: 375px;
+      margin-top: 40px !important;
+
+      @include mobileFrac {
+        width: 272px;
+      }
+    }
+
+    &-btn2 {
+      width: 375px;
+      margin-top: 8px !important;
+
+      @include mobileFrac {
+        width: 272px;
+      }
+    }
+
+    .create-event-description {
+
+      .ant-form-item-explain {
+        width: calc(100% - 65px);
+      }
+
+    }
+  }
+
+  .challenge-form::-webkit-scrollbar-thumb {
+    border: 0px solid transparent;
+    background-color: #d1cccc;
+    border-radius: 6px;
+  }
+  
+  .challenge-form::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(128, 128, 128, 0);
+    background: rgb(151, 151, 151);
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}
+
+.input-text-area-customize {
+  width: 312px;
+  height: 170px;
+  margin: 0 auto;
+}

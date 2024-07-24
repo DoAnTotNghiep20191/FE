@@ -1,0 +1,48 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.remove-icon {
+  path {
+    fill: #ff7070;
+  }
+}
+
+.custom-select {
+  &.ant-select {
+    .ant-select-selector {
+      border: none;
+      background-color: unset;
+      color: #000;
+      box-shadow: unset !important;
+      padding: 0 !important;
+      border-color: unset !important;
+    }
+
+    .ant-select-arrow {
+      color: #fff;
+    }
+
+    &.ant-select-focused {
+      .ant-select-selection-item {
+        color: #000 !important;
+      }
+    }
+  }
+}
+
+.team-dropdown-mobile {
+  z-index: 1000;
+}
+
+.ant-table-cell {
+  @include mobileFrac {
+    padding: 0 6px !important;
+  }
+}
+
+.customize-table {
+  .ant-table-tbody tr:not(:first-child) > td:last-child {
+    background-color: #c7c9d9 !important;
+  }
+}

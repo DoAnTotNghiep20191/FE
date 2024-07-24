@@ -1,0 +1,17 @@
+.Ticket-tooltip {
+  .ant-tooltip-arrow {
+    &::before {
+      background: #fff;
+    }
+  }
+
+  .ant-tooltip-content {
+    .ant-tooltip-inner {
+      padding: 6px 8px;
+      background: #fff;
+      color: #232323;
+      font-size: 13px;
+      border-radius: 2px;
+    }
+  }
+}

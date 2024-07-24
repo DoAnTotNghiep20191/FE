@@ -1,0 +1,23 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.campaign-insight {
+  border: unset;
+
+  .ant-collapse-header {
+    background: url('/images/background.png');
+    padding: 0;
+    height: 64px;
+  }
+
+  .ant-collapse-content>.ant-collapse-content-box {
+    padding: 16px 0;
+  }
+
+  &>.ant-collapse-item:last-child {
+    .ant-collapse-header {
+      border-radius: unset;
+    }
+  }
+}

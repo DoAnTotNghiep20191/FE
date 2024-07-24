@@ -1,0 +1,41 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.date-container {
+  .input-label {
+    font-size: $font-size-1;
+    font-weight: $font-weight-5;
+    color: #121313;
+  }
+  .date-field {
+    height: 48px;
+    border-radius: 10px;
+    background: var(--input-bg-color) !important;
+    border: 1px solid var(--input-border-color);
+    color: var(--input-text-color);
+    input {
+      &::placeholder {
+        font-size: $font-size-3;
+        color: #8F90A6;
+        font-weight: $font-weight-2;
+      }
+      font-size: 16px !important;
+    }
+    &:focus-within {
+      border: 1px solid var(--input-border-color) !important ;
+      box-shadow: none;
+    }
+    &:hover {
+      border: 1px solid var(--input-border-color);
+    }
+    .ant-picker-input-placeholder {
+      input {
+        color: #8F90A6;
+      }
+    }
+  }
+  .ant-picker-outlined.ant-picker-status-error:not(.ant-picker-disabled):hover {
+    border: 1px solid #E53535;
+  }
+}

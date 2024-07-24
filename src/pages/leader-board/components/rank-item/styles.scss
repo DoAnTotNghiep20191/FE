@@ -1,0 +1,65 @@
+.rank-item-container {
+    display: flex;
+    height: 45px;
+    // width: 358px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+
+    &__rank {
+        background: #1C1C28;
+        width: 50px;
+
+        p {
+            color: white;
+            transform: rotate(45deg);
+            width: fit-content;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+        }
+    }
+
+    .border1 {
+        width: 24px;
+        height: 24px;
+        transform: rotate(-45deg);
+        flex-shrink: 0;
+        border: 1px solid #FFF;
+        background: var(--Primary-Black-Night, #121313);
+    }
+
+    .border2 {
+        width: 18.831px;
+        height: 18.831px;
+        // transform: rotate(-45deg);
+        flex-shrink: 0;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        background: var(--Primary-Black-Night, #121313);
+    }
+
+    .rank-item-bg {
+        background-image: url('src/assets/icons/common/campaign-item-bg.svg');
+    }
+
+    &__point {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        border: 1px solid #FFF;
+        height: 25px;
+        background: var(--Dark-Dark-0, #1C1C28);
+        padding: 4px 16px;
+    }
+
+    .rank-position-bg {
+        background-image: none !important;
+
+        opacity: 0.2;
+        background: var(--Dark-Dark-0, #1C1C28);
+
+    }
+}

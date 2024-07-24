@@ -1,0 +1,57 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.form-container {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .btn-back {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  .other-social {
+    max-width: 375px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .modal-title {
+      font-weight: 900;
+      font-size: 24px;
+      color: var(--modal-title);
+      text-align: center;
+      line-height: 40px;
+    }
+    .socials {
+      gap: 10px;
+      padding: 60px 0 100px 0;
+    }
+    .btn {
+      margin-bottom: 10px;
+      img {
+        position: absolute;
+        left: 20px;
+      }
+      p {
+        color: $color-black-0;
+        font-weight: $font-weight-5;
+      }
+    }
+  }
+  @include mobile {
+    .other-social {
+      .modal-title {
+        font-size: 24px;
+      }
+      .socials {
+        width: 272px;
+      }
+    }
+  }
+}

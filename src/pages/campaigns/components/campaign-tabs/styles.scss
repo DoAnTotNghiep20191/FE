@@ -1,0 +1,43 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.campaign-tabs {
+    width: 448px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__inner {
+        width: 100%;
+
+        .ant-tabs-nav-list {
+            width: 100%;
+        }
+
+        .ant-tabs-tab {
+            background-color: black;
+            width: calc(50% - 4px);
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin: 0 !important;
+            border: 2px solid #fff;
+        }
+
+        .ant-tabs-tab-active {
+            color: var($color-blue-5);
+            border: 2px solid $color-blue-5;
+        }
+
+        .ant-tabs-ink-bar {
+            display: none;
+        }
+    }
+
+    @include mobileFrac {
+        // padding-top: 110px;
+        width: 100%;
+    }
+
+}

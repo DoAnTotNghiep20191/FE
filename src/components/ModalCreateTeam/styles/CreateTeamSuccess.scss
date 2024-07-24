@@ -1,0 +1,23 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.create-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &-icon {
+    margin: 50px 0 70px 0;
+    color: var(--text-link);
+  }
+  &-btn {
+    width: 375px;
+  }
+  svg > circle {
+    stroke: none;
+  }
+  svg > path {
+    fill: #8FBFFA;
+  }
+}

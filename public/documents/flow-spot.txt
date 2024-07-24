@@ -1,0 +1,22 @@
+//paste to: https://sequencediagram.org/
+
+title Flow spot trading
+
+boundary FE
+boundary metamask
+boundary SC
+boundary BE
+
+note right of FE:Orders = {\n	chainId: 97,\n expiry: expire date, \n feeRecipient: address,\n maker: address,\n makerAmount,\n makerToken: address,\n pool: NULL_ADDRESS,\n salt: timestamp,\n sender: address,\n taker: address,\n takerAMount,\n takerToken: address,\n takerTokenFeeAmount, \nverifyingContract: address\n}
+
+FE -> metamask call fn signOrder of library
+
+metamask -> FE: signature
+FE -> SC: call createLimitOrder(order, signature)
+
+SC -> FE: success
+
+FE -> BE: POST: /order
+note right of FE: Orders 
+
+BE -> FE: 200

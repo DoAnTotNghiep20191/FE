@@ -1,0 +1,33 @@
+version: 0.2
+
+env:
+  shell: bash
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    on-failure: ABORT
+    commands:
+      - export COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-8)
+      - echo $COMMIT_HASH
+      - export REGION=${REGION}
+      - echo $REGION
+      - export SSM_ENV=${SSM_ENV}
+      - echo $SSM_ENV
+      - export S3_BUCKET=${S3_BUCKET}
+      - echo $S3_BUCKET
+      - export CLOUDFRONT_ID=${CLOUDFRONT_ID}
+      - echo $CLOUDFRONT_ID
+  build:
+    on-failure: ABORT
+    commands:
+      - echo "----------SYNC FILE TO S3 BUCKET----------------"
+      - aws ssm get-parameter --name ${SSM_ENV} --region ${REGION} --with-decryption --output text --query Parameter.Value > .env.production
+      - yarn install
+      - yarn build
+      - ls -la
+      - pwd
+      - aws s3 sync ./build/ $S3_BUCKET --delete
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_ID --paths "/*"

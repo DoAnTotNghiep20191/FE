@@ -1,0 +1,55 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.step2-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .step2-content {
+    width: 575px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include mobileFrac {
+      width: 100%;
+    }
+
+    &-divider {
+      width: 272px;
+      min-width: 272px;
+      background: $color-gray-1;
+      margin: 40px 0 30px 0;
+    }
+
+    &-btn {
+      width: 375px;
+      margin-top: 80px !important;
+
+      @include mobileFrac {
+        width: 272px;
+      }
+    }
+
+    .create-event-description {
+
+      .ant-form-item-explain {
+        width: calc(100% - 65px);
+      }
+
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}
+
+.input-text-area-customize {
+  width: 312px;
+  height: 170px;
+  margin: 0 auto;
+}

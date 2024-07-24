@@ -1,0 +1,27 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.campaigns-tab-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+    align-items: flex-start;
+
+    .btn-create-campaign {
+        width: 104px;
+        height: 37px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @include mobileFrac {
+            position: absolute;
+            left: -10px;
+            top: 0;
+        }
+    }
+
+
+}

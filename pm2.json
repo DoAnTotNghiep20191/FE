@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "nft-ticket-user-phase3",
+      "script": "yarn preview",
+      "node_args": "",
+      "instances": 1
+    }
+  ]
+}

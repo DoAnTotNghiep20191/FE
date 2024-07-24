@@ -1,0 +1,89 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.input-container {
+  .input-label {
+    font-size: $font-size-1;
+    font-weight: $font-weight-5;
+    color: #121313;
+  }
+  .ant-input-group-addon {
+    height: 48px;
+    border-radius: 10px 0px 0px 10px !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: 1px solid var(--input-border-color) !important ;
+  }
+  .ant-input-group-wrapper-status-error {
+    .ant-input-group-addon {
+      border: 1px solid $color-error !important ;
+    }
+  }
+  .ant-input-affix-wrapper {
+    background: var(--input-bg-color);
+    height: 48px;
+    border: 1px solid var(--input-border-color) !important ;
+    color: var(--input-text-color);
+    font-size: $font-size-3;
+    .ant-input-prefix {
+      margin-inline-end: 8px;
+    }
+    input {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: $font-size-3;
+      color: var(--input-text-color);
+      &::placeholder {
+        font-size: $font-size-3;
+        color: #8F90A6;
+        font-weight: $font-weight-2;
+      }
+    }
+    &:focus {
+      background: var(--input-bg-color) !important;
+    }
+    &:focus-within {
+      border: 1px solid var(--input-border-color) !important ;
+      box-shadow: none;
+      background: var(--input-bg-color) !important;
+    }
+    &:hover {
+      background: var(--input-bg-color) !important;
+      border: 1px solid var(--input-border-color);
+    }
+  }
+
+  .ant-input-outlined.ant-input-status-error:not(.ant-input-disabled) {
+    border-color: $color-error !important;
+    background: var(--input-bg-color) !important;
+    &:focus-within {
+      box-shadow: none;
+      background: var(--input-bg-color) !important;
+    }
+    &:hover {
+      background: var(--input-bg-color) !important;
+    }
+  }
+
+  .custom-select-popup {
+    padding: 0;
+    border-radius: 0px;
+    background: $color-black-2;
+    width: 272px;
+
+    // @include mobileFrac {
+    //   width: 272px;
+    // }
+    .ant-select-item {
+      padding: 10px;
+      font-size: $font-size-3;
+      color: var(--input-text-color) !important;
+      border-bottom: 1px solid $color-gray-0 !important;
+    }
+
+    .ant-select-item-option-active {
+      background-color: var(--input-bg-color) !important;
+    }
+  }
+}

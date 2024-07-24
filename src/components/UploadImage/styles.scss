@@ -1,0 +1,51 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.upload-image-container {
+  width: 312px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ant-upload-drag {
+    border: 1px solid #c7c9d9;
+    background: $color-white-1;
+  }
+  .upload-image-current {
+    width: 312px;
+    height: 170px;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  .ant-upload-drag:not(.ant-upload-disabled):hover {
+    border-color: #c7c9d9 !important;
+  }
+  .ant-upload-drag-container {
+    position: relative;
+  }
+  .upload-image-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: $color-gray-0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .upload-image-placeholder {
+    font-size: $font-size-3;
+    color: #8f90a6;
+  }
+}
+
+.ant-upload-wrapper .ant-upload-drag {
+  .ant-upload-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

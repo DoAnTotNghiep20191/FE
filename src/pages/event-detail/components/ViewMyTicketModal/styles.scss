@@ -1,0 +1,124 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.my-ticket {
+  // background-color: $color-gray-2;
+  padding: 20px 0px;
+  width: 448px;
+  margin: auto;
+
+  @include mobileFrac {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .modal-content {
+    padding: 0 45px;
+    padding-bottom: 40px;
+  }
+
+  .card-event-dec {
+    display: block;
+
+    .dec-item {
+      width: 100%;
+    }
+  }
+
+  .card-event-banner {
+    min-height: 132px;
+  }
+
+  .user-info {
+    margin-top: 40px;
+
+    &-item {
+      margin: 15px 0;
+
+      &>h2 {
+        font-size: $font-size-8;
+        font-weight: $font-weight-9;
+      }
+    }
+  }
+
+  .label {
+    font-size: $font-size-1;
+    font-weight: $font-weight-5;
+  }
+
+  .ticket-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .verified-icon {
+      color: $color-white-0;
+    }
+
+    &-item {
+      &>h2 {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-size: $font-size-3;
+      }
+    }
+  }
+
+  .view-btn {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .loading-icon {
+    animation: rotate 2s linear infinite;
+  }
+}
+
+.event-title-with-overflow-wrap {
+  overflow-wrap: anywhere;
+}
+
+.word-break-all {
+  word-break: break-all;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.myticket-modal.modal-container .ant-modal-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.holder-information {
+  color: $color-white-0;
+}
+
+.modal-footer {
+  padding: 0 50px;
+}
+
+.back-icon {
+  position: absolute;
+  top: 42px;
+  color: $color-white-0;
+}
+
+.my-ticket .contained-default--type2 {
+  >span {
+    font-size: 16px !important;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}

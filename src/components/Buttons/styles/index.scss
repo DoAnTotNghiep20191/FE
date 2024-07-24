@@ -1,0 +1,63 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+@import './button-contained.scss';
+@import './button-outlined.scss';
+
+.btn {
+  &-large {
+    height: 53px;
+    display: inline-flex;
+    padding: 10px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: none;
+    border-radius: 12px;
+    span {
+      font-size: $font-size-4;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: -0.18px;
+    }
+
+    @include mobileFrac {
+      padding: 10px;
+    }
+  }
+  &-medium {
+    height: 37px;
+    display: inline-flex;
+    padding: 8px 16px 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: none;
+    border-radius: 10px;
+    span {
+      font-size: $font-size-3;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: -0.16px;
+    }
+  }
+  &-small {
+    height: 20px;
+    display: inline-flex;
+    padding: 4px 12px 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: none;
+    border-radius: 8px;
+    span {
+      font-size: $font-size-3;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: -0.16px;
+    }
+  }
+}

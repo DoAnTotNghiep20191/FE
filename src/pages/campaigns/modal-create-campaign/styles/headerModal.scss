@@ -1,0 +1,89 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+
+    &-title {
+        font-size: $font-size-7;
+        font-weight: $font-weight-4;
+        color: var(--modal-title);
+    }
+
+    &-des {
+        font-size: $font-size-3;
+        color: var(--modal-title);
+    }
+
+    &-box {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .step {
+                width: 24px;
+                height: 24px;
+                background: var(--step-bg-color-inactive);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid var(--step-border-color);
+            }
+
+            .count {
+                font-weight: $font-weight-5;
+                font-size: $font-size-1;
+                color: var(--step-text-color);
+                line-height: 14px;
+            }
+
+            .line {
+                width: 16px;
+                height: 3px;
+                border-radius: 100px;
+                background-color: var(--step-line-color);
+                margin: 0 2px;
+            }
+        }
+
+        .current {
+            .step {
+                background: var(--step-bg-color-active);
+            }
+
+            .count {
+                color: var(--step-text-color-active);
+            }
+        }
+
+        .active {
+            .step {
+                background: var(--step-bg-color-active);
+            }
+
+            .count {
+                color: var(--step-text-color-active);
+            }
+
+            .line {
+                background: var(--step-line-color-active);
+            }
+
+            svg>circle {
+                fill: var(--step-bg-color-active);
+            }
+        }
+    }
+}

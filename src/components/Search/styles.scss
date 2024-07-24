@@ -1,0 +1,49 @@
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/variable.scss';
+
+.custom-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-white-0;
+  padding: 0 20px;
+  border-radius: 29px;
+  border: 1px solid #8f90a6;
+  .input-globe {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #121313;
+    &::placeholder {
+      font-size: $font-size-3;
+      // color: $color-white-0;
+      font-weight: $font-weight-4;
+      // font-style: italic;
+    }
+    &:focus-within {
+      box-shadow: none;
+    }
+  }
+}
+
+.custom-search-type2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #8f90a6;
+  .input-globe {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #121313;
+    &::placeholder {
+      font-size: $font-size-3;
+      color: #8f90a6;
+      font-weight: $font-weight-4;
+      // font-style: italic;
+    }
+    &:focus-within {
+      box-shadow: none;
+    }
+  }
+}

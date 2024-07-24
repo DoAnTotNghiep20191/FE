@@ -1,0 +1,13 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.not-found-wrapper {
+  .ant-result-subtitle {
+    font-size: $font-size-3;
+  }
+  .not-found-icon {
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

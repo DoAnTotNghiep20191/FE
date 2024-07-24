@@ -1,0 +1,5 @@
+@import 'src/assets/scss/_colors.scss';
+
+.personal-profile {
+  @apply bg-black5E text-white px-5 md:px-24 py-8 m-0 md:mx-auto md:mb-8 w-auto md:w-[575px] rounded-[4px] md:rounded-none;
+}

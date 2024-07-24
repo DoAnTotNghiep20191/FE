@@ -1,0 +1,68 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.verification-container {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .btn-back {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  .verification-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .ant-btn {
+      max-width: 375px;
+    }
+    // width: 375px;
+    &-title {
+      font-size: $font-size-7;
+      color: var(--modal-title);
+      font-weight: 400;
+    }
+    &-label {
+      font-size: $font-size-7;
+      color: var(--modal-title);
+      font-weight: 400;
+      padding-top: 50px;
+    }
+    &-des {
+      font-size: $font-size-3;
+      color: var(--modal-title);
+      text-align: center;
+    }
+    .icon-verification {
+      padding-top: 30px;
+      color: var(--btn-contained-bg);
+      >svg> path{
+        fill: #8FBFFA;
+      }
+      >svg > circle {
+        stroke: none;
+      }
+    }
+    .btn-verify {
+      margin: 40px 0 10px 0;
+    }
+    .verification-input {
+      padding-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .btn-resend {
+        width: 272px;
+      }
+      .verification-input {
+        width: 100%;
+      }
+    }
+  }
+}

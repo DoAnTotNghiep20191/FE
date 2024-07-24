@@ -1,0 +1,9 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.campaign-card-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}

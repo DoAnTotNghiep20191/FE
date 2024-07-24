@@ -1,0 +1,29 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+
+.toast-body {
+  padding: 5px 0;
+  &__top {
+    color: $color-black-0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  &__bottom {
+    color: $color-black-0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  img {
+    margin: 0 13px 0 21px;
+  }
+}
+
+.toast-close-icon {
+  cursor: pointer;
+}

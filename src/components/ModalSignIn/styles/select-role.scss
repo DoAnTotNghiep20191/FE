@@ -1,0 +1,145 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.sign-in {
+  .ant-modal-content {
+    padding: 0;
+  }
+}
+
+.select-role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  position: relative;
+
+  .switch-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #008ad8;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.3607843137);
+
+    &-item {
+      display: flow-root;
+      position: relative;
+      height: 37px;
+      width: 212px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: var(--switcher-text-color);
+      cursor: pointer;
+
+      @include mobileFrac {
+        width: 100%;
+      }
+    }
+
+    &-left.active::before {
+      content: '';
+      position: absolute;
+      width: calc(100% - 6px);
+      height: 29px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      border: 1px solid transparent;
+      background-color: #008ad8;
+      mask-composite: add;
+    }
+
+    &-right.active::before {
+      content: '';
+      position: absolute;
+      width: calc(100% - 6px);
+      height: 29px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      border: 1px solid transparent;
+      background-color: #008ad8;
+      mask-composite: add;
+    }
+
+    &-left::before {
+      content: '';
+      position: absolute;
+    }
+
+    &-right::before {
+      content: '';
+      position: absolute;
+    }
+
+    &-left.active {
+      color: #fff;
+    }
+
+    &-right.active {
+      color: #fff;
+    }
+  }
+
+  .info {
+    width: 560px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-des {
+      text-align: center;
+      color: #121313;
+      // padding: 0 40px;
+      padding-top: 50px;
+    }
+  }
+
+  .btn-continue {
+    width: 375px;
+    margin-top: 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 70px 0;
+
+    .switch-form {
+      width: calc(100% - 40px);
+    }
+
+    .info {
+      width: 100%;
+    }
+
+    .btn-continue {
+      margin-top: 176px;
+      width: 272px;
+    }
+  }
+
+  @include mobile {
+    .fan-icon {
+      left: -100px;
+    }
+
+    .org-icon {
+      right: -100px;
+    }
+
+    .btn-continue {
+      // position: fixed;
+      // bottom: 80px;
+      // top: unset !important;
+    }
+  }
+}

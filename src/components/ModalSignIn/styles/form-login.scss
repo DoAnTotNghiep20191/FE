@@ -1,0 +1,159 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.form-sign-in-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .form-login {
+    .form-input {
+      margin-bottom: 0px !important;
+      padding-bottom: 10px;
+      .ant-input-prefix {
+        width: 24px;
+        height: 24px;
+        justify-content: center;
+      }
+    }
+
+    .forgot {
+      color: #008ad8;
+      font-size: $font-size-3;
+      line-height: 20px;
+      text-align: end;
+      cursor: pointer;
+    }
+
+    .btn-signIn {
+      margin-top: 222px;
+      @include mobile {
+        margin-top: 150px;
+      }
+    }
+
+    .modal-title {
+      font-weight: 400;
+      font-size: $font-size-8;
+      color: var(--modal-title);
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .modal-des {
+      font-weight: $font-weight-4;
+      font-size: $font-size-3;
+      color: var(--modal-title);
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    .has-account {
+      padding-top: 100px;
+      font-size: $font-size-3;
+      color: var(--input-text-color);
+      text-align: center;
+      font-weight: $font-weight-4;
+      @include mobileFrac {
+        padding: 30px;
+      }
+      .now {
+        display: inline;
+        font-weight: $font-weight-5;
+        cursor: pointer;
+        color: var(--text-link);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+
+    .btn-back {
+      top: 10px;
+    }
+
+    .form-login {
+      padding-top: 10px;
+      // .has-account {
+      //   position: absolute;
+      //   bottom: -10px;
+      //   left: 0;
+      //   right: 0;
+      // }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .form-login {
+      width: 272px;
+    }
+
+    @include mobile {
+      .ant-modal-content {
+        height: 100vh;
+      }
+    }
+  }
+}
+
+.login-social {
+  display: flex;
+  flex-direction: column;
+
+  &-with {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    padding: 60px 0 20px 0;
+
+    .line {
+      width: 80px;
+      background-color: #ebebf0;
+      height: 1px;
+    }
+
+    .or-login {
+      color: #000;
+      font-size: 19px;
+      line-height: 24px;
+      white-space: nowrap;
+    }
+  }
+
+  .btn {
+    p {
+      color: $color-black-0;
+      font-weight: $font-weight-5;
+    }
+  }
+
+  .btn-google {
+    margin-bottom: 10px;
+
+    img {
+      position: absolute;
+      left: 20px;
+    }
+  }
+
+  .btn-wc {
+    margin-bottom: 10px;
+
+    img {
+      position: absolute;
+      left: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &-with {
+      .line {
+        width: 70px;
+      }
+    }
+  }
+}

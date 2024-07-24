@@ -1,0 +1,38 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.step3-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .step3-content {
+    width: 575px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include mobileFrac {
+      width: 100%;
+    }
+
+    &-divider {
+      min-width: calc(100% - 24px) !important;
+      width: calc(100% - 24px) !important;
+      background: $color-gray-1;
+      margin: 40px 0 30px 0;
+    }
+    
+    .btn-continue {
+      width: 212px;
+
+      @include mobileFrac {
+        width: 272px;
+      }
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}

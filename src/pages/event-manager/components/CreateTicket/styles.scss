@@ -1,0 +1,43 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.ant-modal-content {
+  height: auto !important;
+}
+
+.ticket-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  > svg > path {
+    fill: #2859c5;
+  }
+  &-title {
+    font-weight: $font-weight-4 !important;
+    color: var(--modal-title) !important;
+  }
+  &-des {
+    font-size: $font-size-3;
+    color: var(--modal-title) !important;
+  }
+  &-divider {
+    width: 275px;
+    min-width: 275px;
+    background: $color-gray-1;
+    margin: 20px 0;
+  }
+  .suffix-icon {
+    color: var(--text-link);
+    font-size: $font-size-2;
+    font-weight: $font-weight-5;
+  }
+  .description-input {
+    #description_help {
+      .ant-form-item-explain-error {
+        max-width: calc(100% - 70px);
+      }
+    }
+  }
+}

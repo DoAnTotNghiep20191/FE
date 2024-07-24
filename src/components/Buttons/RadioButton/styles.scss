@@ -1,0 +1,27 @@
+@import 'src/assets/scss/variable.scss';
+
+.radio-btn {
+  .ant-radio-checked {
+    .ant-radio-inner {
+      background: none !important;
+      &::after {
+        background-color: var(--primary-color, $color-primary-primary);
+        transform: scale(0.8);
+      }
+    }
+  }
+
+  &--large {
+    .ant-radio-inner {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .children {
+    color: var(--nft-result-title-color, $color-neutral-neutral-1);
+    font-size: $font-size-3;
+    font-family: 'Hind-SemiBold';
+    // margin-top: 4px;
+  }
+}

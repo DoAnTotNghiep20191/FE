@@ -1,0 +1,115 @@
+@import 'src/assets/scss/variable.scss';
+@import 'src/assets/scss/_colors.scss';
+@import 'src/assets/scss/responsive.scss';
+
+.divider {
+  background: $color-gray-1;
+  // margin: 40px 0;
+}
+
+.event-detail {
+  width: 60%;
+  max-width: 676px;
+  margin: auto;
+  background: $color-grey-1;
+  padding: 50px 100px;
+  line-height: normal;
+  color: #fff;
+  min-height: calc(100vh - 86px);
+
+  .title {
+    font-size: $font-size-1;
+    margin: 0.625rem 0;
+  }
+
+  .content {
+    font-size: $font-size-3;
+  }
+
+  .social {
+    .link {
+      font-size: $font-size-3;
+      margin: 0.625rem 0;
+    }
+  }
+
+  .divider {
+    width: 70%;
+    margin: 20px auto;
+    min-width: unset;
+    // background: $color-grey-2;
+    // height: 1px;
+    // margin: 2.5rem auto;
+  }
+
+  .event-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+
+    &>img {
+      width: 33%;
+    }
+  }
+
+  .list-social {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 0.625rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .purchase-modal {
+    padding: 50px 100px;
+  }
+}
+
+.purchase-btn.ant-btn-default {
+  display: block;
+  width: 100%;
+  max-width: 375px;
+  outline: none;
+  margin: 2.5rem auto;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  .title {
+    font-size: $font-size-7;
+  }
+
+  .message {
+    font-size: $font-size-3;
+  }
+}
+
+.modal-content {
+  padding: 10px 50px;
+}
+
+.event-modal {
+  padding: 20px 0;
+  // color: $color-white-0;
+  width: 100%;
+
+  .modal-content {
+    padding: 20px 0;
+
+    @include mobileFrac {
+      padding: 20px 0;
+    }
+  }
+}
+
+.form-full {
+  width: 100%;
+}
+
+.stripe-modal {
+  .ant-modal-content {
+    box-shadow: 0px -3px 4px -2px #454545e3;
+  }
+}
